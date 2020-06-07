@@ -20,7 +20,7 @@
 }
 
 body {
-  background: #070506 url("/img/main-bg.png");
+  background: #070506 url("/img/main-bg.png") no-repeat;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
@@ -97,6 +97,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
 }
 
 .button-play::after {
@@ -112,7 +113,7 @@ body {
 }
 
 .button-play::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 80px;
   height: 80px;
@@ -120,4 +121,50 @@ body {
   right: -7px;
   top: -7px;
   border-radius: 50%;
+}
+
+.episodes {
+  padding: 60px 0;
+}
+
+.episodes__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 26px;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  min-height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  background: rgba(80, 80, 80, 0.86);
+  transition: all 0.2s;
+  box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.slider__item:hover {
+  background: rgba(64, 101, 255, 0.86);
+  box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slider__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
