@@ -1,229 +1,257 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Star Wars</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <header class="header">
-        <img src="img/logo.png" alt="logo" class="logo header__logo" />
-        <nav class="nav">
-          <a href="#" class="nav__link">Билеты</a>
-          <!-- /.nav__link -->
-          <a href="#" class="nav__link">О фильме</a>
-          <!-- /.nav__link -->
-          <a href="#" class="nav__link">Трейлеры</a>
-          <!-- /.nav__link -->
-          <a href="#" class="nav__link">Отзывы</a>
-          <!-- /.nav__link -->
-        </nav>
-        <!-- /.nav -->
-      </header>
-      <!-- /.header -->
-      <main>
-        <div class="hero">
-          <span class="hero__subtitle">Эпизод IX</span>
-          <h1 class="hero__title">Скайуокер. Восход</h1>
-          <p class="hero__description">
-            Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже
-            более сорока лет, и обещает дать ответы на все загадки из предыдущих
-            серий. Зрителя ожидают старые и новые герои, уникальные миры,
-            увлекательные путешествия на край Галактики и грандиозный финал
-            фантастической саги
-          </p>
-          <span class="hero__premier">Премьера</span>
-          <span class="hero__date">19 декабря 2019</span>
-          <button class="button-play hero__button" data-fancybox href="https://www.youtube.com/watch?v=KVRBfWQgyuY">Смотреть трейлер</ф>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Wars</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-        <div class="episodes">
-          <h2 class="episodes__title">Предыдущие эпизоды</h2>
-          <div class="slider">
-            <div class="slider__item">
-              <div class="slider__year">1977</div>
-              <!-- /.slider__year -->
-              <h3 class="slider__title">
-                Эпизод IV: <br />
-                Новая надежда
-              </h3>
-              <!-- /.slider__title -->
-              <div class="slider__rating">
-                <span class="slider__rating-label">Рейтинг</span>
-                <!-- /.slider__rating-label -->
-              </div>
-              <!-- /.slider__rating -->
-              <img
-                src="img/episodes/episode-4.png"
-                alt="episode-4"
-                class="slider__image"
-              />
-            </div>
-            <!-- /.slider__item -->
-            <div class="slider__item">
-              <div class="slider__year">1980</div>
-              <!-- /.slider__year -->
-              <h3 class="slider__title">
-                Эпизод V: <br />
-                Империя наносит ответный удар
-              </h3>
-              <!-- /.slider__title -->
-              <div class="slider__rating">
-                <span class="slider__rating-label">Рейтинг</span>
-                <!-- /.slider__rating-label -->
-              </div>
-              <!-- /.slider__rating -->
-              <img
-                src="img/episodes/episode-5.png"
-                alt="episode-5"
-                class="slider__image"
-              />
-            </div>
-            <!-- /.slider__item -->
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="img/logo.png" alt="logo" class="logo header__logo" />
+      <nav class="nav">
+        <a href="#" class="nav__link">Билеты</a>
+        <!-- /.nav__link -->
+        <a href="#" class="nav__link">О фильме</a>
+        <!-- /.nav__link -->
+        <a href="#" class="nav__link">Трейлеры</a>
+        <!-- /.nav__link -->
+        <a href="#" class="nav__link">Отзывы</a>
+        <!-- /.nav__link -->
+      </nav>
+      <!-- /.nav -->
+    </header>
+    <!-- /.header -->
+    <main>
+      <div class="hero">
+        <span class="hero__subtitle wow fadeInRight 0.2s">Эпизод IX</span>
+        <h1 class="hero__title wow fadeInRightBig 0.4s">Скайуокер. Восход</h1>
+        <p class="hero__description wow fadeInRight 0.6s">
+          Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже
+          более сорока лет, и обещает дать ответы на все загадки из предыдущих
+          серий. Зрителя ожидают старые и новые герои, уникальные миры,
+          увлекательные путешествия на край Галактики и грандиозный финал
+          фантастической саги
+        </p>
+        <span class="hero__premier wow fadeInRight 0.8s">Премьера</span>
+        <span class="hero__date wow fadeInRight 0.8s">19 декабря 2019</span>
+        <button class="button-play hero__button wow fadeInDown 1s" data-fancybox
+          href="https://www.youtube.com/watch?v=KVRBfWQgyuY">
+          Смотреть трейлер
+        </button>
+      </div>
 
-            <div class="slider__item">
-              <div class="slider__year">1983</div>
-              <!-- /.slider__year -->
-              <h3 class="slider__title">
-                Эпизод VI: <br />
-                Возвращение джедая
-              </h3>
-              <!-- /.slider__title -->
-              <div class="slider__rating">
-                <span class="slider__rating-label">Рейтинг</span>
-                <!-- /.slider__rating-label -->
-              </div>
-              <!-- /.slider__rating -->
-              <img
-                src="img/episodes/episode-6.png"
-                alt="episode-6"
-                class="slider__image"
-              />
+      <div class="episodes">
+        <h2 class="episodes__title">Предыдущие эпизоды</h2>
+        <div class="slider owl-carousel">
+          <div class="slider__item">
+            <div class="slider__year">1977</div>
+            <!-- /.slider__year -->
+            <h3 class="slider__title">
+              Эпизод IV: <br />
+              Новая надежда
+            </h3>
+            <!-- /.slider__title -->
+            <div class="slider__rating">
+              <span class="slider__rating-label">Рейтинг</span>
+              <!-- /.slider__rating-label -->
+              <span class="slider__rating-stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star star-o"></i>
+              </span>
             </div>
-            <!-- /.slider__item -->
-
-            <div class="slider__item">
-              <div class="slider__year">1999</div>
-              <!-- /.slider__year -->
-              <h3 class="slider__title">
-                Эпизод I: <br />
-                Скрытая угроза
-              </h3>
-              <!-- /.slider__title -->
-              <div class="slider__rating">
-                <span class="slider__rating-label">Рейтинг</span>
-                <!-- /.slider__rating-label -->
-              </div>
-              <!-- /.slider__rating -->
-              <img
-                src="img/episodes/episode-1.png"
-                alt="episode-1"
-                class="slider__image"
-              />
-            </div>
-            <!-- /.slider__item -->
-
-            <div class="slider__item episode-2">
-              <div class="slider__year">2002</div>
-              <!-- /.slider__year -->
-              <h3 class="slider__title">
-                Эпизод II <br />
-                Атака клонов
-              </h3>
-              <!-- /.slider__title -->
-              <div class="slider__rating">
-                <span class="slider__rating-label">Рейтинг</span>
-                <!-- /.slider__rating-label -->
-              </div>
-              <!-- /.slider__rating -->
-              <img
-                src="img/episodes/episode-4.png"
-                alt="episode-4"
-                class="slider__image"
-              />
-            </div>
-            <!-- /.slider__item -->
-
-            <div class="slider__item episode-3">
-              <div class="slider__year">2005</div>
-              <!-- /.slider__year -->
-              <h3 class="slider__title">
-                Эпизод III <br />
-                Месть ситхов
-              </h3>
-              <!-- /.slider__title -->
-              <div class="slider__rating">
-                <span class="slider__rating-label">Рейтинг</span>
-                <!-- /.slider__rating-label -->
-              </div>
-              <!-- /.slider__rating -->
-              <img
-                src="img/episodes/episode-5.png"
-                alt="episode"
-                class="slider__image"
-              />
-            </div>
-            <!-- /.slider__item -->
-            <div class="slider__item episode-7">
-              <div class="slider__year">2015</div>
-              <!-- /.slider__year -->
-              <h3 class="slider__title">
-                Эпизод VII <br />
-                Пробуждение силы
-              </h3>
-              <!-- /.slider__title -->
-              <div class="slider__rating">
-                <span class="slider__rating-label">Рейтинг</span>
-                <!-- /.slider__rating-label -->
-              </div>
-              <!-- /.slider__rating -->
-              <img
-                src="./img/episodes/episode-6.png"
-                alt="episode"
-                class="slider__image"
-              />
-            </div>
-            <!-- /.slider__item -->
-            <div class="slider__item episode-8">
-              <div class="slider__year">2017</div>
-              <!-- /.slider__year -->
-              <h3 class="slider__title">
-                Эпизод VIII <br />
-                Последние джедаи
-              </h3>
-              <!-- /.slider__title -->
-              <div class="slider__rating">
-                <span class="slider__rating-label">Рейтинг</span>
-                <!-- /.slider__rating-label -->
-              </div>
-              <!-- /.slider__rating -->
-              <img
-                src="img/episodes/episode-1.png"
-                alt="episode"
-                class="slider__image"
-              />
-            </div>
-            <!-- /.slider__item -->
+            <!-- /.slider__rating -->
+            <img src="img/episodes/episode-4.png" alt="episode-4" class="slider__image" />
           </div>
-          <!-- /.slider -->
-        </div>
-        <!-- /.episodes -->
-      </main>
-    </div>
-    <!-- /.container -->
+          <!-- /.slider__item -->
+          <div class="slider__item">
+            <div class="slider__year">1980</div>
+            <!-- /.slider__year -->
+            <h3 class="slider__title">
+              Эпизод V: <br />
+              Империя наносит ответный удар
+            </h3>
+            <!-- /.slider__title -->
+            <div class="slider__rating">
+              <span class="slider__rating-label">Рейтинг</span>
+              <!-- /.slider__rating-label -->
+              <span class="slider__rating-stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star star-o"></i>
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img src="img/episodes/episode-5.png" alt="episode-5" class="slider__image" />
+          </div>
+          <!-- /.slider__item -->
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  </body>
+          <div class="slider__item">
+            <div class="slider__year">1983</div>
+            <!-- /.slider__year -->
+            <h3 class="slider__title">
+              Эпизод VI: <br />
+              Возвращение джедая
+            </h3>
+            <!-- /.slider__title -->
+            <div class="slider__rating">
+              <span class="slider__rating-label">Рейтинг</span>
+              <!-- /.slider__rating-label -->
+              <span class="slider__rating-stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star star-o"></i>
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img src="img/episodes/episode-6.png" alt="episode-6" class="slider__image" />
+          </div>
+          <!-- /.slider__item -->
+
+          <div class="slider__item">
+            <div class="slider__year">1999</div>
+            <!-- /.slider__year -->
+            <h3 class="slider__title">
+              Эпизод I: <br />
+              Скрытая угроза
+            </h3>
+            <!-- /.slider__title -->
+            <div class="slider__rating">
+              <span class="slider__rating-label">Рейтинг</span>
+              <!-- /.slider__rating-label -->
+              <span class="slider__rating-stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star star-o"></i>
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img src="img/episodes/episode-1.png" alt="episode-1" class="slider__image" />
+          </div>
+          <!-- /.slider__item -->
+
+          <div class="slider__item episode-2">
+            <div class="slider__year">2002</div>
+            <!-- /.slider__year -->
+            <h3 class="slider__title">
+              Эпизод II <br />
+              Атака клонов
+            </h3>
+            <!-- /.slider__title -->
+            <div class="slider__rating">
+              <span class="slider__rating-label">Рейтинг</span>
+              <!-- /.slider__rating-label -->
+              <span class="slider__rating-stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star star-o"></i>
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img src="img/episodes/episode-4.png" alt="episode-4" class="slider__image" />
+          </div>
+          <!-- /.slider__item -->
+
+          <div class="slider__item episode-3">
+            <div class="slider__year">2005</div>
+            <!-- /.slider__year -->
+            <h3 class="slider__title">
+              Эпизод III <br />
+              Месть ситхов
+            </h3>
+            <!-- /.slider__title -->
+            <div class="slider__rating">
+              <span class="slider__rating-label">Рейтинг</span>
+              <!-- /.slider__rating-label -->
+              <span class="slider__rating-stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star star-o"></i>
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img src="img/episodes/episode-5.png" alt="episode" class="slider__image" />
+          </div>
+          <!-- /.slider__item -->
+          <div class="slider__item episode-7">
+            <div class="slider__year">2015</div>
+            <!-- /.slider__year -->
+            <h3 class="slider__title">
+              Эпизод VII <br />
+              Пробуждение силы
+            </h3>
+            <!-- /.slider__title -->
+            <div class="slider__rating">
+              <span class="slider__rating-label">Рейтинг</span>
+              <!-- /.slider__rating-label -->
+              <span class="slider__rating-stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star star-o"></i>
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img src="./img/episodes/episode-6.png" alt="episode" class="slider__image" />
+          </div>
+          <!-- /.slider__item -->
+          <div class="slider__item episode-8">
+            <div class="slider__year">2017</div>
+            <!-- /.slider__year -->
+            <h3 class="slider__title">
+              Эпизод VIII <br />
+              Последние джедаи
+            </h3>
+            <!-- /.slider__title -->
+            <div class="slider__rating">
+              <span class="slider__rating-label">Рейтинг</span>
+              <!-- /.slider__rating-label -->
+              <span class="slider__rating-stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star star-o"></i>
+              </span>
+            </div>
+            <!-- /.slider__rating -->
+            <img src="img/episodes/episode-1.png" alt="episode" class="slider__image" />
+          </div>
+          <!-- /.slider__item -->
+        </div>
+        <!-- /.slider -->
+      </div>
+      <!-- /.episodes -->
+    </main>
+  </div>
+  <!-- /.container -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
